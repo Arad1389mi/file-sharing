@@ -1,10 +1,10 @@
 import os
 import sys
-sys.path.append("D:\file_transfer\src\configuration\setup_configs.py")
-sys.path.append("D:\file_transfer\src\application\file_handler.py")
-sys.path.append("D:\file_transfer\src\application\network\common\network_tcp_protocol.py")
-sys.path.append("D:\file_transfer\src\application\network\common\network_udp_protocol.py")
-sys.path.append("D:\file_transfer\src\transfer_logs\log_recorder.py")
+sys.path.append("\file_transfer\src\configuration\setup_configs.py")
+sys.path.append("\file_transfer\src\application\file_handler.py")
+sys.path.append("\file_transfer\src\application\network\common\network_tcp_protocol.py")
+sys.path.append("\file_transfer\src\application\network\common\network_udp_protocol.py")
+sys.path.append("\file_transfer\src\transfer_logs\log_recorder.py")
 
 from setup_configs import loadConfigs
 from file_handler import FileHandler
@@ -17,10 +17,8 @@ def run(tcpSessionObject):
     tcpSessionObject.acceptConnection()
     tcpFileSenderObject = TcpFileSender(tcpSessionObject, input())
     tcpFileSenderObject.sendFile()
-    ####################
-    ####################
-    ####################
-    ####################
+
+    
     tcpSessionObject.close()
     
 def tcpSendData(session, data):
@@ -89,3 +87,4 @@ class UdpFileSender:
 
    
    
+
