@@ -1,5 +1,5 @@
 from scapy.all import *
-sys.path.append("D:\file_transfer\src\configuration\setup_configs.py")
+sys.path.append("\file_transfer\src\configuration\setup_configs.py")
 from setup_configs import loadConfigs
 
 class TcpSession:
@@ -60,3 +60,4 @@ class TcpSession:
         fin = self.ip/TCP(sport=self.sport, dport=self.dport, flags='FA', seq=self.seq, ack=self.ack)
         send(fin, iface=loadConfigs()["iface"])
         self.connected = False
+
