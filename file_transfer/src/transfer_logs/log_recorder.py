@@ -2,7 +2,7 @@
 import sys
 import sqlite3
 from datetime import datetime
-sys.path.append("D:\file_transfer\src\application\network\statistics\net_statistic.py")
+sys.path.append("\file_transfer\src\application\network\statistics\net_statistic.py")
 from net_statistic import NetStatistics
 
 class LogRecorder:
@@ -100,4 +100,5 @@ class LogRecorder:
         conn.commit()
         conn.close()
         print(f"File transfer '{file_name}' ({transfer_type}) logged at {current_time}")
+
 
