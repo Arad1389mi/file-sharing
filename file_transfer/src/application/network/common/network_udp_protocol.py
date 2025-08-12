@@ -2,7 +2,7 @@
 from scapy.all import *
 import os
 import sys
-sys.path.append("D:\file_transfer\src\configuration\setup_configs.py")
+sys.path.append("\file_transfer\src\configuration\setup_configs.py")
 from setup_configs import loadConfigs
 
 class UdpSession:
@@ -40,5 +40,6 @@ class UdpSession:
             decData = self.fileHandler.decryptFile(None)
             file.write(decData)
             file.close()
+
 
 
