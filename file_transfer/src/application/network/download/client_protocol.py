@@ -1,10 +1,10 @@
 import os
 import sys
 from scapy.all import *
-sys.path.append("D:\file_transfer\src\application\network\common\network_udp_protocol.py")
-sys.path.append("D:\file_transfer\src\configuration\setup_configs.py")
-sys.path.append("D:\file_transfer\src\application\file_handler.py")
-sys.path.append("D:\file_transfer\src\application\network\common\network_tcp_protocol.py")
+sys.path.append("\file_transfer\src\application\network\common\network_udp_protocol.py")
+sys.path.append("\file_transfer\src\configuration\setup_configs.py")
+sys.path.append("\file_transfer\src\application\file_handler.py")
+sys.path.append("\file_transfer\src\application\network\common\network_tcp_protocol.py")
 from setup_configs import loadConfigs
 from file_handler import FileHandler
 from network_tcp_protocol import TcpSession
@@ -45,3 +45,4 @@ class UdpFileReciver:
 
 
         
+
